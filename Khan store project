@@ -1,0 +1,21 @@
+create table store (id integer, name text, type text, cost integer, quantity integer);
+insert into store values(1, 'bike', 'activity', 399, 5);
+insert into store values(2, 'tee-shirts', 'clothing', 2.99, 10);
+insert into store values (3, 'joggers', 'clothing', 25.87, 20);
+insert into store values (4, 'water bottle', 'fitness', 15.99, 50);
+insert into store values (5, 'yoga mat', 'health and wellness', 7, 12);
+insert into store values (6, 'chicken breast', 'food', 6.50, 50);
+insert into store values(7, 'bike', 'activity', 399, 5);
+insert into store values(8, 'football', 'sports', 25.99, 10);
+insert into store values (9, 'basketball', 'sports', 27.97, 20);
+insert into store values (10, 'gatorade', 'drinks', 2.95, 50);
+insert into store values (11, 'baseball', 'sports', 5, 120);
+insert into store values (12, 'leg of lamb', 'food', 26.50, 50);
+insert into store values (13, 'laptop', 'electronics', 1999, 7);
+insert into store values (14, 'ps5', 'electronics', 399, 1);
+insert into store values (15, 'insulin', 'pharmacy', 299, 75);
+
+Select count(type) from store where cost > 100;
+
+select sum(quantity) from store;
+SELECT * FROM store;
