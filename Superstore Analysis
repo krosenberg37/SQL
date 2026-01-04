@@ -1,0 +1,31 @@
+SELECT *
+FROM superstore;
+
+--1: Order items by price
+SELECT item_name,
+price
+FROM superstore
+ORDER BY price desc;
+
+--Select most expensive and cheapest item
+SELECT item_name,
+MIN(price)
+FROM superstore;
+--Find average cost of each category, order most to least
+SELECT category,
+AVG(price)
+FROM superstore
+GROUP BY category
+ORDER BY AVG(price) desc;
+
+--3: SUM of all kitchen supplies
+SELECT category,
+SUM(price),
+AVG(price)
+FROM superstore
+WHERE category = "Kitchen Supplies";
+
+SELECT item_name,
+MAX(price)
+FROM superstore
+WHERE category = "Kitchen Supplies";
